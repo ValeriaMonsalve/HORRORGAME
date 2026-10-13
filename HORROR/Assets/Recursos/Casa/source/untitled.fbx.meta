@@ -1,0 +1,950 @@
+fileFormatVersion: 2
+guid: 65f0e2621adf0c8479ce3f2765e44a68
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1_rusty dirty metal texture-seamless
+    second: {fileID: 2800000, guid: de1265e624973b04787424655e9b87b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 63_rusty dirty metal PBR texture-seamless
+    second: {fileID: 2800000, guid: c28ab7f39df81c04f81eadbf48e3b264, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Avbitare
+    second: {fileID: 2800000, guid: eb544c9eed5a7ba47b6b9eb9739080cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BackyardTest9_4
+    second: {fileID: 2800000, guid: d4945cec3d4c3ec4a872e8810ecd761a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BarbedWire
+    second: {fileID: 2800000, guid: bbb4d406fc7137d45815a42cc5824d38, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BastuBom
+    second: {fileID: 2800000, guid: ec682ec14541e23438fd65b190b036cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BastuSwitch
+    second: {fileID: 2800000, guid: 01c397cd39c348a41bd6d04c54e38007, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bastudoor3
+    second: {fileID: 2800000, guid: 37130dd6d4ab53446a718819a6175d3e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Battery
+    second: {fileID: 2800000, guid: d413e18653826c0438f27550b6f01bf4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BatteryHolder3
+    second: {fileID: 2800000, guid: 8791f10b2b30a3943be0981960e7e0d5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BatterySpak
+    second: {fileID: 2800000, guid: e3b782ec6dcd63b45b3f17a02949e14e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BirdSeedTextureAtlas
+    second: {fileID: 2800000, guid: f34532348d9297840909828ea07dcc78, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BlackScreenTexture
+    second: {fileID: 2800000, guid: 251a92f31d260c74ba2c4826798c39b1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Blue
+    second: {fileID: 2800000, guid: 47eba0916398fe64ea993180b6fa2bd8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_diffuse
+    second: {fileID: 2800000, guid: 22bbd95aa4e442d4fa6169bcf01c2f8a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bom2
+    second: {fileID: 2800000, guid: 50c967a1d9c3d2142ba8eaac0302b104, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BookBack
+    second: {fileID: 2800000, guid: e759194306c2bbd4b8201e911ab702b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BookFront
+    second: {fileID: 2800000, guid: 7e3ed9929e553bc47b6f6129fe7d86f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BookPaperTexture
+    second: {fileID: 2800000, guid: 764937162e84e704b8e6de302731701d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BookSide
+    second: {fileID: 2800000, guid: 01137eccdefb35e4a88c757decbba0d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BrunnsHink2
+    second: {fileID: 2800000, guid: 7fb7b69e4430a2743a4cf59591d6cf73, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BrunnsVev
+    second: {fileID: 2800000, guid: 9db8288e6815ab24483fe90d55723d98, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BrunnsVevPinne2
+    second: {fileID: 2800000, guid: 13d2b1915362c134da4187105ea16642, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BunkerPainted0009_2_S
+    second: {fileID: 2800000, guid: 31ee4e140abe57e459415987f7cb2b0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Byroloda2
+    second: {fileID: 2800000, guid: 09e28b3b0dbd96f43acb01a627bfbf1e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CarKey
+    second: {fileID: 2800000, guid: 3069f5164a3566c4da7aefc4f42df732, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Carbattery
+    second: {fileID: 2800000, guid: 44a7d4847338a9345b6fe659620c6e69, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CardboardPlain0012_S2
+    second: {fileID: 2800000, guid: cf6ebe19139e12944ae7d79c3e5dd25d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CellarFurniture2
+    second: {fileID: 2800000, guid: f6bda8196320600488f4222633647bcf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Coffin2
+    second: {fileID: 2800000, guid: 9e141e647de90674eb77e43965f9480b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ConcreteFloors0041_5_S3
+    second: {fileID: 2800000, guid: 884ce851f8d6ffa499d162a7501c426f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cowleg2
+    second: {fileID: 2800000, guid: d55c1c1cd98b2d148a469eedb1892dd9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cplatta
+    second: {fileID: 2800000, guid: 44c25d3a0522f6d45a0f7d73a9fa0a46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dbom2
+    second: {fileID: 2800000, guid: 4b166587fad4866489f207f456da864a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DirtFloor
+    second: {fileID: 2800000, guid: cdb6915e8055d9d4b81d80a578f4b46a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DoorLock
+    second: {fileID: 2800000, guid: df9ce1f299a44474f88108762a9d9e47, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dpadlock2
+    second: {fileID: 2800000, guid: e85e7a60711536b4f90286b36cff74d1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Elevator
+    second: {fileID: 2800000, guid: 3341bb0d3efcf1149975dcfe25df03df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: EscapeTunnel
+    second: {fileID: 2800000, guid: cfaf667b7660a5c4898e1fec0b5b4e4e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ExitDoor2
+    second: {fileID: 2800000, guid: a036beaf602de6d47ad53301fa739bd8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FurnitureHall2
+    second: {fileID: 2800000, guid: 27adfcc4113ae2345a8df4cf1f49bd6d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FurnitureSovrum2
+    second: {fileID: 2800000, guid: 46c02b646f30cde4196dae382eee365b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FurnitureSovrum2_3
+    second: {fileID: 2800000, guid: 29ece16077dbb7344a484669d0c85f1c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GammaltPapper
+    second: {fileID: 2800000, guid: 576cecd6c90b2f645b7516ecdbdddd01, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Garage3
+    second: {fileID: 2800000, guid: d93a858ecd4e0ef4ea7ce0b01fa13b2e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Garage4
+    second: {fileID: 2800000, guid: 3995fe7dc312c8b4793453d4f30af074, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Garageport
+    second: {fileID: 2800000, guid: 592f3364b6ac6584c81648b7f6ec3bee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Giljotin2
+    second: {fileID: 2800000, guid: 8a81fd7040d66644a9a60255160636f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GiljotinBluprint
+    second: {fileID: 2800000, guid: 16ca27af27aa8254a8f0807d051efea9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GiljotinKlinga
+    second: {fileID: 2800000, guid: a4677f4145e545341a4c39ea6d667dd2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Gold
+    second: {fileID: 2800000, guid: b8858161923762144abef3eff06d4ed7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hammer
+    second: {fileID: 2800000, guid: 7931475b7d60d254281eeba2010bc997, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Handskfack
+    second: {fileID: 2800000, guid: be71521002d7d69498d488638e309896, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HangLock
+    second: {fileID: 2800000, guid: d727a50c63bd1004e8c70b99b73d6eec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HanglockKey
+    second: {fileID: 2800000, guid: bb88038ab5b61054fa3f7b109a826d4a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HouseBakedTexture2Test6_2
+    second: {fileID: 2800000, guid: e23aa43415836a64697bbcbb7e0d2e74, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HouseFloorBaked2Test3
+    second: {fileID: 2800000, guid: 7e83752a4c6f3f248b7d6bc161b0d6b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HouseKey
+    second: {fileID: 2800000, guid: c11292d7e51e0b142aaef85b052478ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HouseUpdateGolv
+    second: {fileID: 2800000, guid: eef943f2f5916854c8a22c0ddec02732, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HouseUpdateTest4
+    second: {fileID: 2800000, guid: cf54c15ba1c75b84398847717f617854, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HouseUpdateTest5_2
+    second: {fileID: 2800000, guid: ffc742cfbd90e2d47b5c2e96f7a0c3ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HouseUpdateVind1_1
+    second: {fileID: 2800000, guid: 97583c04a6205fb46a0f767a2669edfa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HouseWindow2
+    second: {fileID: 2800000, guid: e6665409c1f701c4f9da752704cffce5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HyllorLampa2
+    second: {fileID: 2800000, guid: 30c6a030098b79b4ead7ebb73730c8f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Iron3
+    second: {fileID: 2800000, guid: da1df95cf659c7448bc2b087230b2ea6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Iron3_0
+    second: {fileID: 2800000, guid: ad85a3905a389094fad8bc2ced60b45a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IronDoors
+    second: {fileID: 2800000, guid: 417bf553744a3024f8baed2ce5ca2746, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IronDoors_NoLightmap
+    second: {fileID: 2800000, guid: ef1a1c7a6f126004c9f3aa277b029832, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IronDoors_NoLightmap2
+    second: {fileID: 2800000, guid: a953af0c365b9094d9ffbdaff8fba179, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Junk_Truck_Rust_Texture_by_FoxStox2
+    second: {fileID: 2800000, guid: 59acb594c5d5a5941b20c08f9213825e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kamera2
+    second: {fileID: 2800000, guid: 309954b6f05f42447a699af8ae1ee341, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KitchenDoorR2
+    second: {fileID: 2800000, guid: b591687616eb9ac40ab9354a0dbd6848, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KitchenDoorRUp2
+    second: {fileID: 2800000, guid: 2d11aca761d4c9d4b914fc58c3ff3c7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KitchenFurniture2
+    second: {fileID: 2800000, guid: 164f3cf4aa09db74a9c8c914086ad1c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kloaken
+    second: {fileID: 2800000, guid: 2b88c618c19461e4eafeeba185674840, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Klocka
+    second: {fileID: 2800000, guid: a610b8e0692a54f4c9ba9432eae45148, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Klockdel
+    second: {fileID: 2800000, guid: 30d0210c1dc2308489c396795277e683, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KylDoor2
+    second: {fileID: 2800000, guid: 4c957bf4a397f6a4e883d12f4b9d03d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lekhus2
+    second: {fileID: 2800000, guid: 24c2817ae11dddc48851a3d1b0b5b6da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LekhusDoor2
+    second: {fileID: 2800000, guid: 2849082203c5b534ca3884d634cabbcd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LockMotor2
+    second: {fileID: 2800000, guid: 1faccf3c7c0dd2843942c9d2c43c6764, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "Lysr\xF6r"
+    second: {fileID: 2800000, guid: 8cd087f807ccb8947a0c3e50483c440b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "Lysr\xF6r_1"
+    second: {fileID: 2800000, guid: 56a1d13e88925844692e430a19429590, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Meat3
+    second: {fileID: 2800000, guid: 4340ad7deb8605d4eb37afad02666ce5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MelonDel
+    second: {fileID: 2800000, guid: 4e5d369a65bf3014dbb7bcc72aa39065, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MetalBase0046_3_M
+    second: {fileID: 2800000, guid: c94d9524b35256c448eafe86f8b57060, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MetalBase0122_S
+    second: {fileID: 2800000, guid: da186c31e83b0344388ae14f83a1d65d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MetalFence
+    second: {fileID: 2800000, guid: b5acd485073e7c948ada516748148938, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MetalPainted0019_S
+    second: {fileID: 2800000, guid: 4114e86894c699444a62a51a89593601, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MetalPainted0019_S 1
+    second: {fileID: 2800000, guid: 14949085bdd09dc4aa8915fcbf05cccc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MetalPainted0019_S_0
+    second: {fileID: 2800000, guid: a59d4d4e107e6d54c89f9a647a1816c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MetalScratches0026_M2
+    second: {fileID: 2800000, guid: 349e687645e00dd44b21cc9c6d24390c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MetallPlatta
+    second: {fileID: 2800000, guid: 737efbbc5ace6434ca799db43eec593f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Momplace2
+    second: {fileID: 2800000, guid: e2b0f3b6541eb664cbed37e43ded3e64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Motordelar
+    second: {fileID: 2800000, guid: 4db66db5c044dd949af6d60598f96889, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MovingBookShelf
+    second: {fileID: 2800000, guid: 91a8251cdfc7ea14bbdf1a1c4aa45aef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OldWood
+    second: {fileID: 2800000, guid: d2fb5dcdd8d07404197113368525be45, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OldWood3
+    second: {fileID: 2800000, guid: d405752eef53771488527e415af99808, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OldWood_0
+    second: {fileID: 2800000, guid: 78c71f8e801fcaa438b08246e92440d9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OuthoseGlasruta
+    second: {fileID: 2800000, guid: 034266ede6004504baaf1aa47614b3e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PadlockLekhus
+    second: {fileID: 2800000, guid: f146b1ca287d74046bc8db31ea1390ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Planka2
+    second: {fileID: 2800000, guid: 1e664ba6db90db745b967d67c25dfc69, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PrisonDoor2
+    second: {fileID: 2800000, guid: f823343056e435e4c9bb65c5dc0ca4ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Prisongaller2
+    second: {fileID: 2800000, guid: 0c8220c57988b6d4ab8ce1d3f4e177f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Proppskop
+    second: {fileID: 2800000, guid: cbd0dd2dcb317cd4f90c0fde34c07e2c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2800000, guid: 38fed8a24378a0948803b3611287f1ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RopeSeamless1024Prew2
+    second: {fileID: 2800000, guid: 099d4436ee6f1de42a22826f822fe2ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RostigMetall2
+    second: {fileID: 2800000, guid: bc9a893e7949db346b47e0988cba4fba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RostigMetall4_0
+    second: {fileID: 2800000, guid: 3862967c0687e7f48bda1f4b00bd3f52, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RustPaint0221_30_S2
+    second: {fileID: 2800000, guid: 0917d5ed80f46df47891e3166adef32f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SafeDoor2
+    second: {fileID: 2800000, guid: 3862a4767690e6049962718ad899f1c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shotgun
+    second: {fileID: 2800000, guid: 74515fc361872c6448b6ee801a0aff18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ShotgunBlueprint
+    second: {fileID: 2800000, guid: 2f320547518c5b2448d3ef444642f52e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_color
+    second: {fileID: 2800000, guid: a883407e893f1084dbcda7e2ef3bd4b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SkrivbordsLoda2
+    second: {fileID: 2800000, guid: 10593e0712bff994aba4b863754a571a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Spak
+    second: {fileID: 2800000, guid: adcd394e73d89c54f8374ac9e3b8286b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sparkplug
+    second: {fileID: 2800000, guid: 4cb4dfc70cebc844bb193f1bf810f0ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpindelVind2
+    second: {fileID: 2800000, guid: 507f3ea2f62090e40811bb51b8756510, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stair_Pallar2
+    second: {fileID: 2800000, guid: 0ac07abc8066faa458ed096ae765415c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TextureAtlasWoodenDoor
+    second: {fileID: 2800000, guid: 952d4e08422cb4f4ba4c9dec5edaadb0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TextureAtlas_OldHouse2
+    second: {fileID: 2800000, guid: 5a392a499f7ba1f479419ff785a6fd3c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Barrels0036_2_seamless_S
+    second: {fileID: 2800000, guid: 95b8a0c2c133cd7499154c6f560a28ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BronzeCopper0041_1_seamless_S
+    second: {fileID: 2800000, guid: 6f7dbc8c5e56a0241ad17c460410dd55, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BronzeCopper0097_1_S
+    second: {fileID: 2800000, guid: e645c5c01a4fb6147aa77ddfc0362529, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BronzeCopper0097_1_S2
+    second: {fileID: 2800000, guid: cf72fc659f6578b47870fe55967b4a8d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_FoodGrains0005_1_seamless_S
+    second: {fileID: 2800000, guid: c79f2b56227259a49aa359f1d95ef180, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalBare0154_2_S2
+    second: {fileID: 2800000, guid: 907e353f54560b74aa19be89cfda1151, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "TexturesCom_MetalPainted0125_1_seamless_Med L\xE5s"
+    second: {fileID: 2800000, guid: 12188b06bb098af4da4756aca159f823, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalPainted0204_1_seamless_S
+    second: {fileID: 2800000, guid: 7d5b2bea657fbbe44b28cb776aaf1af6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalPlatesPainted0019_1_seamless_S
+    second: {fileID: 2800000, guid: 60786037166450d4faf511adda98d8fa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Moss0009_1_seamless_SDarker
+    second: {fileID: 2800000, guid: f27c0a78a262c1f45a1eb7401f66193a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_PlywoodPainted0055_1_seamless_SBigger
+    second: {fileID: 2800000, guid: 1d31b1acf987c8041a73baa70e0cb9a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RustPaint0305_1_seamless_S
+    second: {fileID: 2800000, guid: 71c5f534341425e4b8b0b96597364556, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Waterplants0044_1_seamless_S
+    second: {fileID: 2800000, guid: 9a97f198534c9d941ac843bebce49433, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_WoodFine0077_6_seamless_S2
+    second: {fileID: 2800000, guid: c82a3c8ed83643e4caa10c3698f97fc2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_WoodPlanksBare0352_1_S
+    second: {fileID: 2800000, guid: f65b44eb8e2df1f4a9793cc7ee546719, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_WoodPlanksDirty0102_1_seamless_S
+    second: {fileID: 2800000, guid: 21d78c28b9f98014d82668f6c5f30970, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_WoodPlanksFloors0026_1_seamless_S2
+    second: {fileID: 2800000, guid: ea0b182f7c0b95341816ada77107e566, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_WoodPlanksOld0292_7_seamless_S2
+    second: {fileID: 2800000, guid: a3d7d09ddafb20446836b5345f45648f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ToyLock1
+    second: {fileID: 2800000, guid: 11ced040a4f3b6f4a9d17e6fcdbc513c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ToyLockBigKugg
+    second: {fileID: 2800000, guid: 5588c185c3bdc9141961b31725124698, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ToylockLucka
+    second: {fileID: 2800000, guid: c0f74b7038ab9ef46ac1f07a1280f11d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tunna2
+    second: {fileID: 2800000, guid: 2810d9792a549a149b8e7808ea9f2666, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Vagga2
+    second: {fileID: 2800000, guid: bc03754172b8b1440b5dc1327c5d979a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Vapennyckel
+    second: {fileID: 2800000, guid: cc7660301eef3554ab10b4e726713bbb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Vapenskop
+    second: {fileID: 2800000, guid: a79b6bb4ddc10d44da631509b85728fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: VapenskopDoor
+    second: {fileID: 2800000, guid: 05700969b0968f142830e32ae676bc7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Vardagsrum2
+    second: {fileID: 2800000, guid: 359ac1fc58d77e246b9a740251c5b9f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ventillucka4
+    second: {fileID: 2800000, guid: a8aa8414b10bd38409f9836423c9a964, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Vind2DoorKey
+    second: {fileID: 2800000, guid: 2a2d2ac716f55734193f0ea369e4f64b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Vind2Lock
+    second: {fileID: 2800000, guid: 2f6b45db9807c6c4eac2b62685f9b08f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Vind2LockerDoor
+    second: {fileID: 2800000, guid: 148c6ccd4a77f314c81e25bb8a15f9d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: VitrinDoor2
+    second: {fileID: 2800000, guid: 794778db6c637384194be502fa143ae4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: VitrinDoor2_2
+    second: {fileID: 2800000, guid: 6ed81cebb2da37a4b91aa778cf07cd9d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wheel_diffuse
+    second: {fileID: 2800000, guid: 1fa125bbe9120fd48bcc0f3cc78d9a5b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wheelchair2
+    second: {fileID: 2800000, guid: e0604d733cd51d84d8ba580a39e4701d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WoodFine0012_S
+    second: {fileID: 2800000, guid: 16fc9b718157c8b4bae543dd1b63811a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WoodFine0072_3_S
+    second: {fileID: 2800000, guid: e30c88af0f8eb124cbfa3056e58c8cfe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WoodPlanksFloors0029_18_S
+    second: {fileID: 2800000, guid: b39653e8bd4da4e4da5d769be6ea1ae4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WoodRough0048_2_M
+    second: {fileID: 2800000, guid: b8354637f30ef674db3a1968275d235e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fa5_opacity4
+    second: {fileID: 2800000, guid: badfe1d2271225e40a4509ed8161e524, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fafa2
+    second: {fileID: 2800000, guid: 529b572b782a6bc4f975408244d0fec5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: iron2
+    second: {fileID: 2800000, guid: 43cf8d623076c374da0a179ff5237cba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: old wood
+    second: {fileID: 2800000, guid: b588a2f325bdab149a2765eadf56072e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: playHouseKey
+    second: {fileID: 2800000, guid: 62e757a3931d5f74dbdda0e542ba8835, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: spider_web
+    second: {fileID: 2800000, guid: e1506b6cb21d31048a38c6ce29ea5640, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: trent-robinson-trent-robinson-fruitf-flat
+    second: {fileID: 2800000, guid: f2aca73d539e2c24ca41ac7d5c39e1a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood2
+    second: {fileID: 2800000, guid: 4a39052b5b58bbd4bb9ca6b7e885260a, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
