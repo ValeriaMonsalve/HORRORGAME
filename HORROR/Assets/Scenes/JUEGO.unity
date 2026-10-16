@@ -862,6 +862,7 @@ GameObject:
   - component: {fileID: 1383185912}
   - component: {fileID: 1383185911}
   - component: {fileID: 1383185915}
+  - component: {fileID: 1383185916}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -966,6 +967,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec5f197ccf608342ba68938b9a95f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkipAnimation
+--- !u!114 &1383185916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383185910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a9c8f148a6f8041bb1c3fd30f4120a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VideoSceneChanger
+  videoPlayer: {fileID: 751374674}
+  nombreSiguienteEscena: JUEGO1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
