@@ -8,6 +8,15 @@ public class IntroMenu : MonoBehaviour
         SceneManager.LoadScene("JUEGO");
     }
 
+    public void SwitchScenes1()
+    {
+        SceneManager.LoadScene("JUEGO");
+    }
+    public void SwitchScenes2()
+    {
+        SceneManager.LoadScene("JUEGO2");
+    }
+
     public void ExitGame()
     {
         Application.Quit();
