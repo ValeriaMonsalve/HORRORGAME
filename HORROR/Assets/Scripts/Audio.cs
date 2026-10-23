@@ -7,7 +7,7 @@ public class Audio
     public string nombre;
     public AudioClip audioFile;
 
-    [Range(0f, 1f)]
+    [Range(0f, 50f)]
     public float volume;
 
     [Range(0.1f, 2f)]

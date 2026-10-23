@@ -642,6 +642,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1936847029986783028, guid: bc6e65bb12f0afd4ab49ca7679118da3, type: 3}
+      propertyPath: audios.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936847029986783028, guid: bc6e65bb12f0afd4ab49ca7679118da3, type: 3}
+      propertyPath: audios.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936847029986783028, guid: bc6e65bb12f0afd4ab49ca7679118da3, type: 3}
       propertyPath: audios.Array.data[1].nombre
       value: Click
       objectReference: {fileID: 0}

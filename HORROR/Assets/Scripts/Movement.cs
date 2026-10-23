@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
             if (!sonidoMotor)
             {
                 AudioManager.instance.Play("Respirar");
+                AudioManager.instance.Play("Latidos");
                 sonidoMotor = true;
             }
 
@@ -39,6 +40,7 @@ public class Player : MonoBehaviour
             if (sonidoMotor)
             {
                 AudioManager.instance.Play("Respirar");
+                AudioManager.instance.Play("Latidos");
                 sonidoMotor = false;
             }
         }
