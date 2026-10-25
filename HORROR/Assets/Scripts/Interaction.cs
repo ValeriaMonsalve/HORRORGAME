@@ -1,7 +1,9 @@
 using UnityEngine;
+using TMPro;
 
-// Va en el jugador (el mismo objeto que Salto y el script de movimiento).
-// Mira hacia donde apunta la cámara: si hay un frasco cerca, muestra la "E" y lo recoge al presionarla.
+// Va en el jugador (el mismo objeto que Salto y Linterna).
+// Mira hacia donde apunta la cámara: si hay algo interactuable cerca (agua bendita,
+// objetos del ritual, altar...), muestra la "E" y lo activa al presionarla.
 public class Interaction : MonoBehaviour
 {
     [Header("Referencias")]
@@ -11,10 +13,13 @@ public class Interaction : MonoBehaviour
     [Tooltip("Objeto de UI con la 'E' (hijo directo del Canvas, fuera de MainPanel)")]
     public GameObject promptE;
 
+    [Tooltip("Opcional: texto donde se escribe qué hará la E, por ejemplo '[E] Recoger Vela'. Puedes arrastrar el mismo texto de PromptE")]
+    public TMP_Text textoPrompt;
+
     [Header("Ajustes")]
     public KeyCode teclaInteractuar = KeyCode.E;
 
-    [Tooltip("Distancia máxima, en metros, a la que se puede recoger")]
+    [Tooltip("Distancia máxima, en metros, a la que se puede interactuar")]
     public float distancia = 3f;
 
     [Tooltip("Grosor del 'rayo' al apuntar; más grande = más fácil apuntar a objetos pequeños")]
@@ -23,7 +28,7 @@ public class Interaction : MonoBehaviour
     [Tooltip("Capas que bloquean o detectan el rayo. Por defecto: todas")]
     public LayerMask capas = ~0;
 
-    AguaBendita objetivo;
+    IInteractuable objetivo;
 
     void Awake()
     {
@@ -51,15 +56,22 @@ public class Interaction : MonoBehaviour
         objetivo = BuscarObjetivo();
         MostrarPrompt(objetivo != null);
 
-        if (objetivo != null && Input.GetKeyDown(teclaInteractuar))
+        if (objetivo == null) return;
+
+        if (textoPrompt != null)
         {
-            objetivo.Recoger();
+            textoPrompt.text = "[" + teclaInteractuar + "] " + objetivo.TextoInteraccion;
+        }
+
+        if (Input.GetKeyDown(teclaInteractuar))
+        {
+            objetivo.Interactuar();
             objetivo = null;
             MostrarPrompt(false);
         }
     }
 
-    AguaBendita BuscarObjetivo()
+    IInteractuable BuscarObjetivo()
     {
         // Rayo desde el centro de la pantalla
         Ray rayo = camara.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
@@ -67,7 +79,12 @@ public class Interaction : MonoBehaviour
         if (Physics.SphereCast(rayo, radioApuntado, out RaycastHit hit, distancia, capas, QueryTriggerInteraction.Ignore))
         {
             // Busca el componente en el collider o en su padre (por si el collider está en un hijo)
-            return hit.collider.GetComponentInParent<AguaBendita>();
+            IInteractuable candidato = hit.collider.GetComponentInParent<IInteractuable>();
+
+            if (candidato != null && !string.IsNullOrEmpty(candidato.TextoInteraccion))
+            {
+                return candidato;
+            }
         }
 
         return null;

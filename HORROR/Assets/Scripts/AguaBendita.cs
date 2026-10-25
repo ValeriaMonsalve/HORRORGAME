@@ -2,13 +2,23 @@ using UnityEngine;
 
 // Va en cada frasco de agua bendita que pongas en la escena.
 // El frasco necesita un Collider que NO sea Trigger.
-public class AguaBendita : MonoBehaviour
+public class AguaBendita : MonoBehaviour, IInteractuable
 {
     [Tooltip("Cuántos frascos da este objeto al recogerlo")]
     public int cantidad = 1;
 
     [Tooltip("Nombre de un audio del AudioManager (opcional). Déjalo vacío si no quieres sonido")]
     public string sonidoRecoger = "";
+
+    public string TextoInteraccion
+    {
+        get { return "Recoger agua bendita"; }
+    }
+
+    public void Interactuar()
+    {
+        Recoger();
+    }
 
     public void Recoger()
     {

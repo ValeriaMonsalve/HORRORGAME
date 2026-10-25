@@ -7,7 +7,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class Fantasma : MonoBehaviour
 {
-    enum Estado { Patrullando, Persiguiendo, Buscando }
+    enum Estado { Patrullando, Persiguiendo, Buscando, Aturdido }
 
     [Header("Patrullaje")]
     [Tooltip("Puntos de la casa que puede visitar (objetos vacíos en el piso). Si queda vacío, elige puntos al azar alrededor de donde empieza")]
@@ -67,6 +67,11 @@ public class Fantasma : MonoBehaviour
     bool esperando;
     float temporizador;
     float proximoAtaque;
+    float temporizadorAturdido;
+
+    [Header("Agua bendita")]
+    [Tooltip("Objeto opcional (partículas, luz...) que se activa mientras el fantasma está aturdido")]
+    public GameObject efectoAturdido;
 
     readonly RaycastHit[] impactos = new RaycastHit[16];
 
@@ -122,6 +127,10 @@ public class Fantasma : MonoBehaviour
             case Estado.Buscando:
                 if (ve) IniciarPersecucion();
                 else ActualizarBusqueda();
+                break;
+
+            case Estado.Aturdido:
+                ActualizarAturdido();
                 break;
         }
     }
@@ -227,6 +236,33 @@ public class Fantasma : MonoBehaviour
     }
 
     // ---------- BÚSQUEDA (perdió de vista al jugador) ----------
+
+    // ---------- AGUA BENDITA ----------
+
+    // Lo llama FrascoLanzado al romperse cerca del fantasma:
+    // se queda quieto y no puede atacar durante unos segundos.
+    public void Aturdir(float segundos)
+    {
+        estado = Estado.Aturdido;
+        temporizadorAturdido = segundos;
+        esperando = false;
+
+        agent.isStopped = true;
+        agent.velocity = Vector3.zero;
+
+        if (efectoAturdido != null) efectoAturdido.SetActive(true);
+    }
+
+    void ActualizarAturdido()
+    {
+        temporizadorAturdido -= Time.deltaTime;
+
+        if (temporizadorAturdido <= 0f)
+        {
+            if (efectoAturdido != null) efectoAturdido.SetActive(false);
+            IniciarPatrulla();
+        }
+    }
 
     void PerderJugador()
     {
