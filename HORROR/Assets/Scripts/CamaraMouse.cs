@@ -45,14 +45,14 @@ public class CamaraMouse : MonoBehaviour
         zInicial = e.z;
     }
 
-    void Start()
-    {
-        if (bloquearCursor)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-    }
+   // void Start()
+    //{
+       // if (bloquearCursor)
+     //   {
+       //     Cursor.lockState = CursorLockMode.Locked;
+         //   Cursor.visible = false;
+       // }
+   // }
 
     void Update()
     {
