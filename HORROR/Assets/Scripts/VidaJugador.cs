@@ -2,8 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-// Va en el jugador. Lleva la vida, actualiza la barra del HUD (SliderVida)
-// y muestra el Game Over cuando llega a 0.
+// Va en el jugador. Lleva la vida, actualiza la barra del HUD (SliderVida),
+// reproduce el sonido de daño y muestra el panel de Game Over cuando la vida llega a 0.
 public class VidaJugador : MonoBehaviour
 {
     [Header("Vida")]
@@ -12,19 +12,25 @@ public class VidaJugador : MonoBehaviour
     [Tooltip("Barra de vida del HUD (SliderVida)")]
     public Slider sliderVida;
 
-    [Header("Game Over (opcional)")]
-    [Tooltip("Panel que aparece al morir (hijo del Canvas, fuera de MainPanel)")]
-    public GameObject panelGameOver;
-
-    [Tooltip("Opcional: arrastra aquí el componente PausaJuego para que Escape no reanude la partida estando muerto")]
-    public Behaviour pausaADesactivar;
-
     [Header("Sonido (opcional)")]
     [Tooltip("Nombres (exactos) de los audios del AudioManager que suenan A LA VEZ al recibir daño. Lista vacía = sin sonido")]
     public string[] sonidosDanio = { "Danio1", "Danio2", "Danio3" };
 
+    [Header("Game Over")]
+    [Tooltip("Panel que aparece al morir (hijo del Canvas, fuera de MainPanel)")]
+    public GameObject panelGameOver;
+
+    [Tooltip("Scripts de pausa (Menu, PausaJuego...) que se desactivan al morir para que Escape no abra la pausa")]
+    public Behaviour[] pausaADesactivar;
+
+    [Tooltip("Nombre exacto de la escena del menú de inicio (debe estar en Build Profiles)")]
+    public string escenaMenuInicio = "INICIO";
+
     public float VidaActual { get; private set; }
     public bool EstaMuerto { get; private set; }
+
+    // Mientras sea true el jugador no recibe daño (por ejemplo, durante el ritual)
+    public bool Invulnerable { get; set; }
 
     void Awake()
     {
@@ -49,7 +55,7 @@ public class VidaJugador : MonoBehaviour
 
     public void RecibirDanio(float cantidad)
     {
-        if (EstaMuerto) return;
+        if (EstaMuerto || Invulnerable) return;
 
         VidaActual = Mathf.Max(0f, VidaActual - cantidad);
         ActualizarBarra();
@@ -65,24 +71,9 @@ public class VidaJugador : MonoBehaviour
     {
         if (sonidosDanio == null || sonidosDanio.Length == 0) return;
 
-        AudioManager am = AudioManager.instance;
-        if (am == null) return;
-
-        // Cada audio del AudioManager tiene su propio AudioSource, así que suenan todos a la vez
         foreach (string nombre in sonidosDanio)
         {
-            if (string.IsNullOrEmpty(nombre)) continue;
-
-            // Se comprueba antes porque AudioManager.Play() da error si el nombre no existe
-            string nombreActual = nombre;
-            if (System.Array.Exists(am.audios, a => a.nombre == nombreActual))
-            {
-                am.Play(nombreActual);
-            }
-            else
-            {
-                Debug.LogWarning("VidaJugador: el audio '" + nombreActual + "' no existe en el AudioManager.", this);
-            }
+            SonidoSeguro.Reproducir(nombre);
         }
     }
 
@@ -90,9 +81,13 @@ public class VidaJugador : MonoBehaviour
     {
         EstaMuerto = true;
 
+        // Evita que Escape abra o cierre la pausa estando muerto
         if (pausaADesactivar != null)
         {
-            pausaADesactivar.enabled = false;
+            foreach (Behaviour b in pausaADesactivar)
+            {
+                if (b != null) b.enabled = false;
+            }
         }
 
         Time.timeScale = 0f;
@@ -103,6 +98,10 @@ public class VidaJugador : MonoBehaviour
         {
             panelGameOver.SetActive(true);
         }
+        else
+        {
+            Debug.LogWarning("VidaJugador: el jugador murió pero no hay Panel Game Over asignado.", this);
+        }
     }
 
     // Botón "Reiniciar" del panel de Game Over
@@ -110,6 +109,13 @@ public class VidaJugador : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    // Botón "Menú" del panel de Game Over
+    public void IrAlMenuInicio()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(escenaMenuInicio);
     }
 
     void ActualizarBarra()

@@ -78,7 +78,7 @@ public class InventarioRitual : MonoBehaviour
 
         StringBuilder sb = new StringBuilder();
 
-        sb.Append("Objetos del ritual: " + Recogidos);
+        sb.Append("Ritual objects: " + Recogidos);
         if (totalObjetos > 0) sb.Append("/" + totalObjetos);
         sb.AppendLine();
 

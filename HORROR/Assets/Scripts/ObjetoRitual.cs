@@ -20,7 +20,7 @@ public class ObjetoRitual : MonoBehaviour, IInteractuable
 
     public string TextoInteraccion
     {
-        get { return "Recoger " + Nombre; }
+        get { return "Get" + Nombre; }
     }
 
     public void Interactuar()
@@ -31,7 +31,7 @@ public class ObjetoRitual : MonoBehaviour, IInteractuable
             return;
         }
 
-        Aviso.Mostrar("Recogiste: " + Nombre);
+        Aviso.Mostrar("You collected: " + Nombre);
         InventarioRitual.instance.Agregar(tipo);
         SonidoSeguro.Reproducir(sonidoRecoger);
 

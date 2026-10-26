@@ -40,7 +40,17 @@ public class AltarRitual : MonoBehaviour, IInteractuable
     public string escenaSiguiente = "";
 
     [Tooltip("Segundos de espera antes de cambiar de escena")]
-    public float retardo = 3f;
+    public float retardo = 4f;
+
+    [Header("Sacudida de cámara del ritual")]
+    [Tooltip("Grados que se inclina la cámara. Más alto = más brusco")]
+    public float anguloTemblor = 10f;
+
+    [Tooltip("Metros que se mueve la cámara")]
+    public float desplazamientoTemblor = 0.25f;
+
+    [Tooltip("Segundos que dura. Mantén el Retardo igual o mayor para que se vea antes del cambio de escena")]
+    public float duracionTemblor = 3f;
 
     bool completado;
     int colocadas;
@@ -65,7 +75,7 @@ public class AltarRitual : MonoBehaviour, IInteractuable
             int i = BuscarRanuraColocable();
             if (i >= 0) return "Colocar " + ranuras[i].tipo;
 
-            return "Colocar objetos del ritual";
+            return "Place the ritual objects";
         }
     }
 
@@ -78,7 +88,7 @@ public class AltarRitual : MonoBehaviour, IInteractuable
         if (i < 0)
         {
             // Mensaje neutro: no revela el orden correcto
-            Aviso.Mostrar(ordenEstricto ? "Algo no está en orden..." : "Aún te faltan objetos");
+            Aviso.Mostrar(ordenEstricto ? "Something isn't quite right..." : "You are still missing items");
             return;
         }
 
@@ -90,7 +100,7 @@ public class AltarRitual : MonoBehaviour, IInteractuable
         if (r.visual != null) r.visual.SetActive(true);
 
         SonidoSeguro.Reproducir(sonidoColocar);
-        Aviso.Mostrar("Colocaste: " + r.tipo + " (" + colocadas + "/" + ranuras.Length + ")");
+        Aviso.Mostrar("You placed: " + r.tipo + " (" + colocadas + "/" + ranuras.Length + ")");
 
         if (colocadas >= ranuras.Length)
         {
@@ -119,6 +129,16 @@ public class AltarRitual : MonoBehaviour, IInteractuable
     IEnumerator RealizarRitual()
     {
         completado = true;
+
+        // Durante el ritual ningún fantasma puede matar al jugador antes del cambio de escena
+        VidaJugador vida = FindAnyObjectByType<VidaJugador>();
+        if (vida != null) vida.Invulnerable = true;
+
+        // Sacudida brusca de la cámara
+        if (TemblorCamara.instance != null)
+        {
+            TemblorCamara.instance.Temblar(anguloTemblor, desplazamientoTemblor, duracionTemblor);
+        }
 
         SonidoSeguro.Reproducir(sonidoRitual);
 
