@@ -7,4 +7,8 @@ public class SkipAnimation : MonoBehaviour
     {
         SceneManager.LoadScene("JUEGO1");
     }
+    public void SkipSecondAnimation()
+    {
+        SceneManager.LoadScene("INICIO");
+    }
 }
