@@ -28,6 +28,18 @@ public class InventarioRitual : MonoBehaviour
     readonly Dictionary<string, int> objetos =
         new Dictionary<string, int>(System.StringComparer.OrdinalIgnoreCase);
 
+    // Cuántos de cada tipo se han recogido en total, aunque ya se hayan colocado en el altar
+    readonly Dictionary<string, int> recogidosPorTipo =
+        new Dictionary<string, int>(System.StringComparer.OrdinalIgnoreCase);
+
+    public int TotalRecogido(string tipo)
+    {
+        if (string.IsNullOrEmpty(tipo)) return 0;
+
+        int c;
+        return recogidosPorTipo.TryGetValue(tipo, out c) ? c : 0;
+    }
+
     void Awake()
     {
         instance = this;
@@ -43,6 +55,7 @@ public class InventarioRitual : MonoBehaviour
         if (string.IsNullOrEmpty(tipo)) return;
 
         objetos[tipo] = Cantidad(tipo) + cantidad;
+        recogidosPorTipo[tipo] = TotalRecogido(tipo) + cantidad;
         Recogidos += cantidad;
         ActualizarTexto();
 
@@ -78,7 +91,7 @@ public class InventarioRitual : MonoBehaviour
 
         StringBuilder sb = new StringBuilder();
 
-        sb.Append("Ritual objects: " + Recogidos);
+        sb.Append("Objetos del ritual: " + Recogidos);
         if (totalObjetos > 0) sb.Append("/" + totalObjetos);
         sb.AppendLine();
 
